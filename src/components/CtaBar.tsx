@@ -1,39 +1,37 @@
+import { getLocale, getTranslations } from "next-intl/server";
+import type { Locale } from "@/i18n/config";
+import { LocaleLink as Link } from "@/components/LocaleLink";
 import { telHref, whatsappHref } from "@/lib/links";
-import Link from "next/link";
+import { externalLinkRel } from "@/lib/external-links";
 
-export function CtaBar({ context }: { context?: string }) {
+export async function CtaBar({ context }: { context?: string }) {
+  const locale = (await getLocale()) as Locale;
+  const t = await getTranslations("Cta");
   const wa = whatsappHref(
-    context
-      ? `Merhaba, ${context} hakkında bilgi ve teklif almak istiyorum.`
-      : undefined
+    context ? t("whatsappContext", { context }) : undefined
   );
+
   return (
-    <section className="bg-accent-500 py-10 text-white">
+    <section className="bg-brand-700 py-8 text-white sm:py-10">
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 px-4 md:flex-row">
         <div className="text-center md:text-left">
-          <h2 className="text-2xl font-bold">30 saniyede karar veren müşteriler için</h2>
-          <p className="mt-1 text-accent-100">Acil ara · WhatsApp · veya ücretsiz keşif formu</p>
+          <h2 className="text-xl font-bold sm:text-2xl">{t("title")}</h2>
+          <p className="mt-1 text-sm text-brand-100 sm:text-base">{t("subtitle")}</p>
         </div>
-        <div className="flex flex-wrap justify-center gap-3">
-          <a
-            href={telHref()}
-            className="rounded-xl bg-white px-5 py-3 font-bold text-accent-600 hover:bg-gray-100"
-          >
-            Acil Ara
+        <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:flex-wrap sm:justify-center">
+          <a href={telHref()} className="btn-accent w-full sm:w-auto">
+            {t("call")}
           </a>
           <a
             href={wa}
             target="_blank"
-            rel="noopener noreferrer"
-            className="rounded-xl border-2 border-white px-5 py-3 font-bold hover:bg-white/10"
+            rel={externalLinkRel}
+            className="btn-accent w-full sm:w-auto"
           >
-            WhatsApp
+            {t("whatsapp")}
           </a>
-          <Link
-            href="/teklif"
-            className="rounded-xl bg-brand-900 px-5 py-3 font-bold hover:bg-brand-800"
-          >
-            Teklif Al
+          <Link locale={locale} href="/teklif" className="btn-accent w-full sm:w-auto">
+            {t("quote")}
           </Link>
         </div>
       </div>

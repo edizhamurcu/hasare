@@ -1,6 +1,8 @@
 # KKTC Haşere İlaçlama — Gelişmiş Proje Planı
 
-Bu doküman, `kktc_ilaclama_proje_plani.html` ve sohbet analizinin birleştirilmiş, uygulama seviyesinde genişletilmiş halidir.
+**Müşteri canlı site:** [alobocekservisi.com](https://alobocekservisi.com/) — marka **Kıbrıs Haşere ilaçlama (Alo Böcek)**, tel. **0533 859 11 41**, **aloobocek@gmail.com**
+
+Bu doküman, `kktc_ilaclama_proje_plani.html`, sohbet analizi ve canlı siteden doğrulanan bilgilerin birleştirilmiş halidir.
 
 ## Hedef
 
@@ -39,7 +41,7 @@ KKTC'de **böcek ilaçlama**, **haşere ilaçlama**, **fare ilaçlama**, **sivri
 ### Hizmetler (`/hizmetler/[slug]`)
 
 - hamambocegi-ilaclama, fare-ilaclama, karinca-ilaclama, sivrisinek-ilaclama
-- bocek-ilaclama, termit-ilaclama, akrep-ilaclama, yilan-kontrolu, dezenfeksiyon
+- bocek-ilaclama, termit-ilaclama, akrep-ilaclama, dezenfeksiyon
 
 ### Şehirler (`/bolgeler/[slug]`)
 
@@ -57,6 +59,14 @@ KKTC'de **böcek ilaçlama**, **haşere ilaçlama**, **fare ilaçlama**, **sivri
 Her kampanya grubu → ilgili landing URL (kalite puanı).
 
 ## Sprint yol haritası
+
+### Sprint 1b (tamamlandı — SEO / GEO / mobil)
+
+- [x] BreadcrumbList + WebSite + HowTo + genişletilmiş LocalBusiness schema
+- [x] Sayfa başına GEO özet kutusu (`GeoSummary`)
+- [x] `public/llms.txt` (ChatGPT / Gemini / Claude için)
+- [x] Mobil hamburger menü, 44px+ dokunma alanları, viewport/manifest
+- [x] İç link ağı (ilgili hizmetler / bölgeler)
 
 ### Sprint 1 (tamamlandı — iskelet)
 
@@ -98,8 +108,6 @@ Her hizmet/bölge sayfasında:
 
 ## Güven unsurları checklist
 
-- [ ] Sağlık Bakanlığı lisans no (footer + schema)
-- [ ] Yetki belgesi PDF linki
 - [ ] Önce/sonra 6+ görsel
 - [ ] 10+ Google yorumu (widget)
 - [ ] Kurumsal logo bandı

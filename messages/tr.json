@@ -1,0 +1,261 @@
+{
+  "Nav": {
+    "services": "Hizmetler",
+    "regions": "Bölgeler",
+    "blog": "Blog",
+    "faq": "SSS",
+    "quote": "Teklif Al",
+    "home": "Ana Sayfa",
+    "call": "Ara",
+    "whatsapp": "WhatsApp",
+    "mainMenu": "Ana menü",
+    "openMenu": "Menüyü aç",
+    "closeMenu": "Menüyü kapat",
+    "language": "Dil"
+  },
+  "Footer": {
+    "contact": "İletişim",
+    "contactAndSocial": "İletişim ve sosyal medya",
+    "services": "Hizmetler",
+    "regions": "Bölgeler",
+    "allServices": "Tüm hizmetler →",
+    "allRegions": "Tüm bölgeler →",
+    "faqLegal": "SSS & yasal",
+    "allFaq": "Tüm sorular →",
+    "privacy": "Gizlilik Politikası",
+    "kvkk": "KVKK Aydınlatma",
+    "terms": "Kullanım Koşulları",
+    "whatsappWrite": "WhatsApp ile yazın",
+    "emailWrite": "E-posta: {email}",
+    "emailAria": "E-posta gönder",
+    "facebookAria": "Facebook — {handle}",
+    "instagramAria": "Instagram — {handle}",
+    "since": "{year}'den beri KKTC.",
+    "copyright": "© 2026 {name}. Tüm hakları saklıdır.",
+    "developedByPrefix": "Web sitesi",
+    "developedBySuffix": " tarafından geliştirilmiştir.",
+    "developerName": "Arekan Software"
+  },
+  "FaqPage": {
+    "metaTitle": "Sık Sorulan Sorular — KKTC Haşere İlaçlama",
+    "metaDesc": "Ücretsiz keşif, teklif süreci, acil servis, garanti ve güvenlik hakkında sık sorulan sorular.",
+    "metaKeywords": "sık sorulan sorular ilaçlama, ücretsiz keşif kktc, acil ilaçlama, haşere ilaçlama garanti",
+    "breadcrumb": "Sık sorulan sorular",
+    "title": "Sık sorulan sorular",
+    "intro": "Google ve müşterilerimizden en çok gelen soruların yanıtları. Aradığınızı bulamazsanız 7/24 bizi arayın veya WhatsApp ile yazın.",
+    "listTitle": "Tüm sorular"
+  },
+  "Hero": {
+    "badge": "KKTC · 7/24 Acil Servis",
+    "callNow": "Hemen Ara",
+    "whatsappQuote": "WhatsApp Teklif Al",
+    "freeInspection": "Ücretsiz Keşif Talebi"
+  },
+  "Cta": {
+    "title": "Hemen teklif alın",
+    "subtitle": "7/24 acil hat · WhatsApp · ücretsiz keşif",
+    "call": "Acil Ara",
+    "whatsapp": "WhatsApp",
+    "quote": "Teklif Al",
+    "whatsappContext": "Merhaba, {context} hakkında bilgi ve teklif almak istiyorum."
+  },
+  "Common": {
+    "skipLink": "İçeriğe atla",
+    "home": "Ana Sayfa",
+    "breadcrumbHome": "Ana Sayfa",
+    "readMore": "Devamını oku →",
+    "backHome": "Ana sayfaya dön",
+    "allPosts": "← Tüm yazılar",
+    "detailLink": "Detaylı bilgi →",
+    "or": "veya",
+    "faqTitle": "Sık sorulan sorular",
+    "logoHome": "Ana sayfa — {alt}",
+    "floatingCall": "Telefon ile arayın",
+    "floatingWhatsapp": "WhatsApp ile yazın"
+  },
+  "Home": {
+    "metaTitle": "KKTC Haşere İlaçlama — Lefkoşa Böcek ve Kemirgen İlaçlama",
+    "metaDesc": "{name} — {activity}. {phones}. 7/24 garantili hizmet, profesyonel ürünler, ücretsiz keşif. Lefkoşa, Girne, Gazimağusa ve tüm KKTC.",
+    "metaKeywords": "kktc haşere ilaçlama, lefkosa böcek ilaçlama, girne ilaçlama, kemirgen ilaçlama, acil ilaçlama kktc",
+    "geoSummary": "{name} — KKTC genelinde 7/24 haşere ve kemirgen ilaçlama. Profesyonel ekip, ücretsiz keşif, Lefkoşa merkezli servis.",
+    "heroTitle": "KKTC'nin Her Noktasına Profesyonel Haşere ve Kemirgen İlaçlama",
+    "heroSubtitle": "{name} — {activity}. ISO ve TSE belgeli ekip. 7/24 garantili ilaçlama, Lefkoşa ve tüm KKTC.",
+    "servicesTitle": "Hizmetlerimiz",
+    "servicesIntro": "Hamamböceği, fare, sivrisinek ve kurumsal alanlar — tüm ilaçlama hizmetlerimiz.",
+    "allServices": "Tüm hizmetler →",
+    "regionsTitle": "Hizmet verdiğimiz bölgeler",
+    "regionsIntro": "Lefkoşa merkezli ekibimizle Girne, Gazimağusa, İskele, Güzelyurt, Lefke ve KKTC'nin tüm noktalarına aynı gün servis veriyoruz.",
+    "regionLink": "{name} böcek ilaçlama →",
+    "faq1q": "Teklif nasıl alınır?",
+    "faq1a": "Ücretsiz keşif sonrası yazılı teklif hazırlanır. Web sitemizde fiyat yayınlanmaz; tutar yalnızca teklif belgesinde paylaşılır.",
+    "faq2q": "{name} hangi bölgelere servis veriyor?",
+    "faq2a": "Lefkoşa merkezli olmak üzere Girne, Gazimağusa, İskele, Güzelyurt, Lefke ve tüm KKTC.",
+    "faq3q": "Ücretsiz keşif var mı?",
+    "faq3a": "Evet — keşif sonrası yazılı teklif sunulur. Kurumsal müşterilere rapor ve evrak teslimi yapılır.",
+    "faq4q": "Acil ilaçlama hizmeti var mı?",
+    "faq4a": "7/24 acil hat ile aynı gün veya acil yönlendirme sağlanır."
+  },
+  "ServicesPage": {
+    "metaTitle": "Haşere ve Kemirgen İlaçlama Hizmetleri",
+    "metaDesc": "KKTC genelinde hamamböceği, fare, sivrisinek, termit ve kurumsal ilaçlama hizmetleri.",
+    "metaKeywords": "haşere ilaçlama, böcek ilaçlama hizmetleri kktc, fare ilaçlama, termit ilaçlama",
+    "heroTitle": "İlaçlama Hizmetlerimiz",
+    "heroSubtitle": "Konut, iş yeri, okul, hastane ve endüstriyel tesisler için profesyonel haşere kontrolü.",
+    "breadcrumb": "Hizmetler",
+    "faq1q": "Hangi haşerelere müdahale ediyorsunuz?",
+    "faq1a": "Standart aylık programda yüzey sprey ile karınca, fare, hamamböceği, örümcek vb.; sivrisinek ULV, termit, tahta kurusu ve dezenfeksiyon için ayrı teklif. Tüm hizmet listesi /hizmetler sayfasında.",
+    "faq2q": "Acil ilaçlama var mı?",
+    "faq2a": "Evet, 7/24 acil hat ile yönlendirme yapılır."
+  },
+  "RegionsPage": {
+    "metaTitle": "KKTC Bölgeleri — İlaçlama",
+    "metaDesc": "Lefkoşa, Girne, Gazimağusa, İskele, Güzelyurt ve Lefke'de profesyonel ilaçlama.",
+    "metaKeywords": "lefkosa böcek ilaçlama, girne ilaclama, gazimagusa ilaclama, iskele ilaclama",
+    "heroTitle": "Hizmet Bölgelerimiz",
+    "heroSubtitle": "KKTC'nin tüm ilçelerinde aynı gün ve acil müdahale.",
+    "breadcrumb": "Bölgeler"
+  },
+  "BlogPage": {
+    "metaTitle": "İlaçlama Blog ve Rehberler",
+    "metaDesc": "KKTC haşere kontrolü, mevsimlik ipuçları ve faydalı bilgiler.",
+    "metaKeywords": "haşere ilaçlama blog, hamamböceği rehberi, fare kontrolü kktc, ilaçlama ipuçları",
+    "breadcrumb": "Blog",
+    "heroTitle": "İlaçlama Rehberleri",
+    "heroSubtitle": "Haşere kontrolü, mevsimsel öneriler ve sık sorulan konularda kısa ve net makaleler."
+  },
+  "BlogDetail": {
+    "relatedServiceIntro": "Bu konuda profesyonel destek için",
+    "relatedServiceOutro": "hizmetimize göz atın veya ücretsiz keşif talep edin.",
+    "relatedServiceLink": "{name} ilaçlama",
+    "relatedTitle": "İlgili hizmet"
+  },
+  "QuotePage": {
+    "metaTitle": "Ücretsiz Keşif ve Teklif",
+    "metaDesc": "Standart teklif kapsamı ve sözleşme koşulları. Ücretsiz keşif — yazılı teklif WhatsApp veya telefon.",
+    "metaKeywords": "ücretsiz keşif, ilaçlama teklif kktc, haşere ilaçlama teklif",
+    "breadcrumb": "Teklif Al",
+    "heroTitle": "Ücretsiz Keşif ve Yazılı Teklif",
+    "heroSubtitle": "Teklif kapsamını aşağıda okuyun; ardından form ile keşif talep edin — WhatsApp’tan hızlı dönüş.",
+    "formTitle": "Keşif talep formu",
+    "formIntro": "Mülk tipinizi ve sorununuzu yazın; ücretsiz keşif sonrası yazılı teklif için sizi arayalım."
+  },
+  "QuoteCta": {
+    "title": "Ücretsiz keşif ve yazılı teklif",
+    "body": "Web sitemizde fiyat listesi yoktur. Alanınızı değerlendirdikten sonra size özel yazılı teklif hazırlanır.",
+    "bodyWithContext": "{context} için ücretsiz keşif sonrası yazılı teklif alın — fiyat yalnızca teklif belgesinde paylaşılır."
+  },
+  "ServiceDetail": {
+    "processTitle": "Uygulama süreci",
+    "relatedRegions": "İlgili bölgeler",
+    "relatedServices": "Diğer hizmetler",
+    "regionLabel": "{name} ilaçlama"
+  },
+  "RegionDetail": {
+    "neighborhoodsTitle": "Hizmet verdiğimiz mahalleler",
+    "popularServices": "Popüler hizmetler",
+    "serviceLink": "{name} ilaçlama →",
+    "relatedRegions": "Diğer bölgeler",
+    "genericFaqQ": "{name} bölgesinde ücretsiz keşif var mı?",
+    "genericFaqA": "Evet. {name} ve çevresinde ücretsiz keşif sonrası yazılı teklif sunulur; 7/24 acil hat aktiftir.",
+    "howTo1": "Telefon veya WhatsApp ile iletişime geçin; adres ve haşere türünü bildirin.",
+    "howTo2": "Uzman ekibimiz ücretsiz keşif yapar; alan, tür ve risk değerlendirilir.",
+    "howTo3": "Yazılı teklif onayı sonrası kokusuz, profesyonel ilaçlama uygulanır; rapor teslim edilir."
+  },
+  "PestShowcase": {
+    "title": "Mücadele Ettiğimiz Haşereler",
+    "intro": "Konut, iş yeri ve endüstriyel alanlarda en sık karşılaşılan türlere yönelik hedefli ilaçlama programları."
+  },
+  "TrustGallery": {
+    "title": "Profesyonel uygulama alanları",
+    "disinfection": "Dezenfeksiyon",
+    "residential": "Konut",
+    "hospital": "Hastane",
+    "industrial": "Endüstriyel"
+  },
+  "Trust": {
+    "title": "Neden {name}?",
+    "intro": "{year}'den beri KKTC genelinde haşere ve kemirgen ilaçlamasında güvenilir çözüm ortağınız. Profesyonel ekip, ücretsiz keşif ve uygulama sonrası rapor ile eviniz ve işletmeniz emin ellerde.",
+    "whatsappNow": "WhatsApp ile hemen yazın",
+    "items": {
+      "iso": {
+        "title": "ISO, TSE & TSE-HYB",
+        "desc": "Kalite standartlarına uygun kurumsal ilaçlama; hizmet yeterlilik belgesi ile denetlenebilir süreç."
+      },
+      "bayer": {
+        "title": "Bayer Çevre Bilimleri",
+        "desc": "Orijinal biyosidal ürünler; kokusuz, leke bırakmayan profesyonel uygulama."
+      },
+      "inspection": {
+        "title": "Ücretsiz Keşif & Rapor",
+        "desc": "Periyodik ilaçlama için ücretsiz keşif; uygulama sonrası rapor ve evrak teslimi."
+      },
+      "emergency": {
+        "title": "7/24 Acil Müdahale",
+        "desc": "Sözleşmeli müşterilerde beklenmeyen acil sorunlara 24 saat içinde ücretsiz müdahale (standart kapsam türleri)."
+      },
+      "corporate": {
+        "title": "Kurumsal Referanslar",
+        "desc": "Kamu kurumları, okul, hastane, fabrika ve konut projelerinde deneyimli ekip."
+      }
+    }
+  },
+  "About": {
+    "title": "Hakkımızda",
+    "serviceAreasTitle": "Hizmet alanlarımız",
+    "credentialsTitle": "Belgelerimiz"
+  },
+  "Form": {
+    "help": "Bilgilerinizi gönderdiğinizde WhatsApp mesaj ekranında hazır olarak açılır.",
+    "name": "Ad Soyad",
+    "namePlaceholder": "Adınız",
+    "city": "Şehir",
+    "cityPlaceholder": "Şehir seçin",
+    "propertyType": "Mülk tipi",
+    "propertyPlaceholder": "Seçin",
+    "propertyApartment": "Daire (1+1 / 2+1 / 3+1)",
+    "propertyVilla": "Villa",
+    "propertySite": "Site / toplu konut",
+    "propertyBusiness": "İş yeri / restoran / otel",
+    "issue": "Sorun / not",
+    "issuePlaceholder": "Örn. hamamböceği, aylık sözleşme, dış alan...",
+    "submit": "WhatsApp ile Gönder",
+    "whatsappIntro": "Merhaba, ücretsiz keşif talep ediyorum.",
+    "whatsappName": "Ad Soyad: {name}",
+    "whatsappCity": "Şehir: {city}",
+    "whatsappProperty": "Mülk: {property}",
+    "whatsappIssue": "Sorun: {issue}"
+  },
+  "Error": {
+    "title": "Bir hata oluştu",
+    "message": "Sayfa yüklenirken beklenmeyen bir sorun oluştu. Lütfen tekrar deneyin.",
+    "retry": "Tekrar dene",
+    "home": "Ana sayfa"
+  },
+  "NotFound": {
+    "title": "Sayfa bulunamadı",
+    "message": "Aradığınız sayfa taşınmış veya kaldırılmış olabilir.",
+    "home": "Ana sayfaya dön",
+    "services": "Hizmetlere git"
+  },
+  "Meta": {
+    "defaultDescription": "{name} — {activity}. {phones}. 7/24 garantili hizmet, profesyonel ürünler, ücretsiz keşif. Lefkoşa ve tüm KKTC.",
+    "manifestName": "{name}",
+    "manifestDesc": "KKTC haşere ve kemirgen ilaçlama"
+  },
+  "GeoSummary": {
+    "title": "Hızlı özet",
+    "ariaLabel": "Sayfa özeti",
+    "brand": "Firma",
+    "website": "Web sitesi",
+    "region": "Bölge",
+    "phone": "Telefon",
+    "email": "E-posta",
+    "service": "Hizmet"
+  },
+  "valueProps": {
+    "0": "7/24 Garantili İlaçlama",
+    "1": "Aynı Gün / Acil Müdahale",
+    "2": "Ücretsiz Keşif",
+    "3": "ISO & TSE Belgeli"
+  }
+}

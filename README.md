@@ -7,13 +7,24 @@ Dönüşüm ve Local SEO odaklı KKTC haşere ilaçlama web uygulaması. Plan de
 ```bash
 cd /home/arekan/hasere
 cp .env.example .env.local
-# .env.local içinde telefon, domain ve GA4/GTM değerlerini düzenleyin
 export PATH="/home/arekan/.nvm/versions/node/v20.20.2/bin:$PATH"
 npm install
 npm run dev
 ```
 
-Tarayıcı: [http://localhost:3000](http://localhost:3000)
+Tarayıcı: **http://localhost:3020** (port 3000 başka projede kullanılıyor olabilir)
+
+**Production:** https://alobocekservisi.com (`NEXT_PUBLIC_SITE_URL` — `.env.production`)
+
+### Internal Server Error görürseniz
+
+```bash
+npm run dev:clean
+# veya kararlı test için:
+npm run start:prod
+```
+
+Sunucuyu `0.0.0.0:3020` üzerinde dinler; aynı ağdan `http://SUNUCU_IP:3020` ile erişilebilir.
 
 ## Komutlar
 

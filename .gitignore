@@ -9,6 +9,7 @@
 
 # next.js
 /.next/
+/.next-deploy/
 /out/
 
 # production
@@ -18,12 +19,15 @@
 .DS_Store
 *.pem
 .env
+.env.*
 .env*.local
+!.env.example
 
 # debug
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+*.log
 
 # typescript
 *.tsbuildinfo
@@ -31,3 +35,22 @@ next-env.d.ts
 
 # vercel
 .vercel
+
+# deploy runtime artifacts
+/deploy/rollback/
+/deploy/**/.next/
+
+# editor / OS
+.vscode/
+.idea/
+*.swp
+*~
+
+# local source dumps (not used in production)
+/logo.jpeg
+/logo.png
+
+# intermediate service image downloads (optimize script skips these)
+/public/images/services/t[0-9]*.jpg
+/public/images/services/pexels-test.jpg
+/public/images/services/firin-source.jpg

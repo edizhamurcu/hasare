@@ -1,23 +1,29 @@
 import { telHref, whatsappHref } from "@/lib/links";
+import { externalLinkRel } from "@/lib/external-links";
 
-export function FloatingContact() {
+type Props = {
+  whatsappLabel: string;
+  callLabel: string;
+};
+
+export function FloatingContact({ whatsappLabel, callLabel }: Props) {
   return (
-    <div className="fixed bottom-4 right-4 z-40 flex flex-col gap-2 md:hidden">
+    <div className="fixed bottom-0 right-0 z-40 flex flex-col gap-2 p-4 pb-[max(1rem,env(safe-area-inset-bottom))] md:hidden">
       <a
         href={whatsappHref()}
         target="_blank"
-        rel="noopener noreferrer"
-        className="rounded-full bg-[#25D366] px-4 py-3 text-sm font-bold text-white shadow-lg"
-        aria-label="WhatsApp"
+        rel={externalLinkRel}
+        className="flex min-h-[48px] items-center justify-center rounded-full bg-[#075E54] px-5 text-sm font-bold text-white shadow-lg hover:bg-[#064942]"
+        aria-label={whatsappLabel}
       >
         WhatsApp
       </a>
       <a
         href={telHref()}
-        className="rounded-full bg-accent-500 px-4 py-3 text-sm font-bold text-white shadow-lg"
-        aria-label="Telefon"
+        className="flex min-h-[48px] items-center justify-center rounded-full bg-accent-600 px-5 text-sm font-bold text-white shadow-lg"
+        aria-label={callLabel}
       >
-        Ara
+        {callLabel}
       </a>
     </div>
   );

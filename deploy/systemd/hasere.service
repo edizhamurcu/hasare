@@ -1,0 +1,17 @@
+[Unit]
+Description=Kibris Hasere — Next.js (alobocekservisi.com)
+After=network.target
+
+[Service]
+Type=simple
+User=arekan
+WorkingDirectory=/home/arekan/hasere
+Environment=PATH=/home/arekan/.nvm/versions/node/v20.20.2/bin:/usr/bin:/bin
+Environment=NODE_ENV=production
+Environment=NEXT_PUBLIC_SITE_URL=https://alobocekservisi.com
+ExecStart=/home/arekan/.nvm/versions/node/v20.20.2/bin/npm run start -- --hostname 127.0.0.1 --port 3020
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

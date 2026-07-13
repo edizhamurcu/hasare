@@ -1,0 +1,261 @@
+{
+  "Nav": {
+    "services": "Services",
+    "regions": "Regions",
+    "blog": "Blog",
+    "faq": "FAQ",
+    "quote": "Get a Quote",
+    "home": "Home",
+    "call": "Call",
+    "whatsapp": "WhatsApp",
+    "mainMenu": "Main menu",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "language": "Language"
+  },
+  "Footer": {
+    "contact": "Contact",
+    "contactAndSocial": "Contact and social",
+    "services": "Services",
+    "regions": "Regions",
+    "allServices": "All services →",
+    "allRegions": "All regions →",
+    "faqLegal": "FAQ & legal",
+    "allFaq": "All questions →",
+    "privacy": "Privacy Policy",
+    "kvkk": "Personal Data Notice",
+    "terms": "Terms of Use",
+    "whatsappWrite": "Message on WhatsApp",
+    "emailWrite": "Email: {email}",
+    "emailAria": "Send email",
+    "facebookAria": "Facebook — {handle}",
+    "instagramAria": "Instagram — {handle}",
+    "since": "Northern Cyprus since {year}.",
+    "copyright": "© 2026 {name}. All rights reserved.",
+    "developedByPrefix": "Website developed by",
+    "developedBySuffix": ".",
+    "developerName": "Arekan Software"
+  },
+  "FaqPage": {
+    "metaTitle": "FAQ — Pest Control Northern Cyprus",
+    "metaDesc": "Answers about free inspection, written quotes, emergency service, warranty and treatment safety in Northern Cyprus.",
+    "metaKeywords": "pest control faq cyprus, free inspection kktc, emergency exterminator, pest control warranty",
+    "breadcrumb": "FAQ",
+    "title": "Frequently asked questions",
+    "intro": "Answers to the questions we hear most on Google and from customers. Call or WhatsApp us 24/7 if you need more detail.",
+    "listTitle": "All questions"
+  },
+  "Hero": {
+    "badge": "Northern Cyprus · 24/7 Emergency",
+    "callNow": "Call Now",
+    "whatsappQuote": "Quote via WhatsApp",
+    "freeInspection": "Free Inspection Request"
+  },
+  "Cta": {
+    "title": "Get a quote today",
+    "subtitle": "24/7 hotline · WhatsApp · free inspection",
+    "call": "Emergency Call",
+    "whatsapp": "WhatsApp",
+    "quote": "Get a Quote",
+    "whatsappContext": "Hello, I would like information and a quote about {context}."
+  },
+  "Common": {
+    "skipLink": "Skip to content",
+    "home": "Home",
+    "breadcrumbHome": "Home",
+    "readMore": "Read more →",
+    "backHome": "Back to home",
+    "allPosts": "← All posts",
+    "detailLink": "Learn more →",
+    "or": "or",
+    "faqTitle": "Frequently asked questions",
+    "logoHome": "Home — {alt}",
+    "floatingCall": "Call by phone",
+    "floatingWhatsapp": "Message on WhatsApp"
+  },
+  "Home": {
+    "metaTitle": "Northern Cyprus Pest Control — Nicosia Exterminator",
+    "metaDesc": "{name} — {activity}. {phones}. 24/7 guaranteed service, professional products, free inspection. Nicosia, Kyrenia, Famagusta and all of Northern Cyprus.",
+    "metaKeywords": "pest control northern cyprus, nicosia exterminator, kyrenia pest control, rodent control kktc, emergency pest control",
+    "geoSummary": "{name} — 24/7 pest and rodent control across Northern Cyprus. Professional team, free inspection, Nicosia HQ.",
+    "heroTitle": "Professional Pest & Rodent Control Across Northern Cyprus",
+    "heroSubtitle": "{name} — {activity}. ISO & TSE certified team. 24/7 guaranteed service in Nicosia and all of Northern Cyprus.",
+    "servicesTitle": "Our Services",
+    "servicesIntro": "Cockroaches, rodents, mosquitoes and commercial premises — all our pest control services.",
+    "allServices": "All services →",
+    "regionsTitle": "Areas we serve",
+    "regionsIntro": "From our Nicosia base we offer same-day service in Kyrenia, Famagusta, Iskele, Güzelyurt, Lefke and all of Northern Cyprus.",
+    "regionLink": "{name} pest control →",
+    "faq1q": "How do I get a quote?",
+    "faq1a": "After a free inspection we send a written quote. No prices are published on the website — amounts are in the quote document only.",
+    "faq2q": "Which areas does {name} serve?",
+    "faq2a": "Nicosia-based service covering Kyrenia, Famagusta, Iskele, Güzelyurt, Lefke and all of Northern Cyprus.",
+    "faq3q": "Is the inspection free?",
+    "faq3a": "Yes — a written quote is provided after inspection. Reports and documentation for corporate clients.",
+    "faq4q": "Is emergency service available?",
+    "faq4a": "24/7 hotline with same-day or urgent dispatch."
+  },
+  "ServicesPage": {
+    "metaTitle": "Pest & Rodent Control Services",
+    "metaDesc": "Cockroach, rodent, mosquito, termite and commercial pest control across Northern Cyprus.",
+    "metaKeywords": "pest control services cyprus, cockroach control, rodent control, termite treatment",
+    "heroTitle": "Our Pest Control Services",
+    "heroSubtitle": "Professional pest management for homes, businesses, schools, hospitals and industrial sites.",
+    "breadcrumb": "Services",
+    "faq1q": "Which pests do you treat?",
+    "faq1a": "Standard monthly surface-spray covers ants, rodents, cockroaches, spiders, etc. Mosquito ULV, termites, bed bugs and disinfection are quoted separately — see /teklif.",
+    "faq2q": "Is emergency service available?",
+    "faq2a": "Yes — 24/7 hotline dispatch."
+  },
+  "RegionsPage": {
+    "metaTitle": "Northern Cyprus Regions — Pest Control",
+    "metaDesc": "Professional pest control in Nicosia, Kyrenia, Famagusta, Iskele, Güzelyurt and Lefke.",
+    "metaKeywords": "nicosia pest control, kyrenia exterminator, famagusta pest control, lefke pest control",
+    "heroTitle": "Service Regions",
+    "heroSubtitle": "Same-day and emergency response across all districts of Northern Cyprus.",
+    "breadcrumb": "Regions"
+  },
+  "BlogPage": {
+    "metaTitle": "Pest Control Blog & Guides",
+    "metaDesc": "Northern Cyprus pest control tips, seasonal advice and useful information.",
+    "metaKeywords": "pest control blog cyprus, cockroach guide, rodent control kktc, exterminator tips",
+    "breadcrumb": "Blog",
+    "heroTitle": "Pest Control Guides",
+    "heroSubtitle": "Short, clear articles on pest control, seasonal tips and common questions."
+  },
+  "BlogDetail": {
+    "relatedServiceIntro": "For professional help with this topic, see our",
+    "relatedServiceOutro": "service or request a free inspection.",
+    "relatedServiceLink": "{name} control",
+    "relatedTitle": "Related service"
+  },
+  "QuotePage": {
+    "metaTitle": "Free Inspection & Quote",
+    "metaDesc": "Standard quote scope and contract terms. Free inspection — written quote via WhatsApp or phone.",
+    "metaKeywords": "free inspection, pest control quote, northern cyprus exterminator, housing complex pest control",
+    "breadcrumb": "Get a Quote",
+    "heroTitle": "Free Inspection & Written Quote",
+    "heroSubtitle": "Read the scope below, then request an inspection — we reply quickly on WhatsApp.",
+    "formTitle": "Inspection request form",
+    "formIntro": "Tell us your property type and issue — we will prepare a written quote after a free inspection."
+  },
+  "QuoteCta": {
+    "title": "Free inspection and written quote",
+    "body": "We do not publish prices on the website. After assessing your property we prepare a personalised written quote.",
+    "bodyWithContext": "Get a written quote for {context} after a free inspection — fees are shared in the quote document only."
+  },
+  "ServiceDetail": {
+    "processTitle": "Treatment process",
+    "relatedRegions": "Related regions",
+    "relatedServices": "Other services",
+    "regionLabel": "{name} pest control"
+  },
+  "RegionDetail": {
+    "neighborhoodsTitle": "Neighbourhoods we serve",
+    "popularServices": "Popular services",
+    "serviceLink": "{name} pest control →",
+    "relatedRegions": "Other regions",
+    "genericFaqQ": "Is free inspection available in {name}?",
+    "genericFaqA": "Yes. Free on-site inspection and a written quote are offered in {name} and surrounding areas; 24/7 emergency line is active.",
+    "howTo1": "Contact us by phone or WhatsApp with your address and pest type.",
+    "howTo2": "Our team performs a free inspection and assesses area, species and risk.",
+    "howTo3": "After written quote approval, professional low-odour treatment is applied and a report is provided."
+  },
+  "PestShowcase": {
+    "title": "Pests We Control",
+    "intro": "Targeted treatment programmes for the most common species in homes, businesses and industrial sites."
+  },
+  "TrustGallery": {
+    "title": "Professional treatment areas",
+    "disinfection": "Disinfection",
+    "residential": "Residential",
+    "hospital": "Hospital",
+    "industrial": "Industrial"
+  },
+  "Trust": {
+    "title": "Why {name}?",
+    "intro": "Your trusted pest and rodent control partner across Northern Cyprus since {year}. Professional team, free inspection and post-treatment reports for your home or business.",
+    "whatsappNow": "Message us on WhatsApp now",
+    "items": {
+      "iso": {
+        "title": "ISO, TSE & TSE-HYB",
+        "desc": "Quality-assured corporate service with service adequacy certification."
+      },
+      "bayer": {
+        "title": "Bayer Environmental Science",
+        "desc": "Original biocidal products; low-odour, non-staining professional application."
+      },
+      "inspection": {
+        "title": "Free Inspection & Report",
+        "desc": "Free inspection for periodic programmes; reports and documentation after treatment."
+      },
+      "emergency": {
+        "title": "24/7 Emergency Response",
+        "desc": "Contract clients: free intervention within 24 hours for unexpected in-scope pest issues."
+      },
+      "corporate": {
+        "title": "Corporate References",
+        "desc": "Experienced team for public sector, schools, hospitals, factories and housing projects."
+      }
+    }
+  },
+  "About": {
+    "title": "About Us",
+    "serviceAreasTitle": "Service areas",
+    "credentialsTitle": "Certifications"
+  },
+  "Form": {
+    "help": "Your details will open ready to send in WhatsApp.",
+    "name": "Full name",
+    "namePlaceholder": "Your name",
+    "city": "City",
+    "cityPlaceholder": "Select city",
+    "propertyType": "Property type",
+    "propertyPlaceholder": "Select",
+    "propertyApartment": "Flat (1+1 / 2+1 / 3+1)",
+    "propertyVilla": "Villa",
+    "propertySite": "Housing complex / site",
+    "propertyBusiness": "Business / restaurant / hotel",
+    "issue": "Issue / notes",
+    "issuePlaceholder": "e.g. cockroaches, monthly contract, outdoor areas...",
+    "submit": "Send via WhatsApp",
+    "whatsappIntro": "Hello, I would like to request a free inspection.",
+    "whatsappName": "Name: {name}",
+    "whatsappCity": "City: {city}",
+    "whatsappProperty": "Property: {property}",
+    "whatsappIssue": "Issue: {issue}"
+  },
+  "Error": {
+    "title": "Something went wrong",
+    "message": "An unexpected error occurred while loading the page. Please try again.",
+    "retry": "Try again",
+    "home": "Home"
+  },
+  "NotFound": {
+    "title": "Page not found",
+    "message": "The page you are looking for may have been moved or removed.",
+    "home": "Back to home",
+    "services": "Go to services"
+  },
+  "Meta": {
+    "defaultDescription": "{name} — {activity}. {phones}. 24/7 guaranteed service, professional products, free inspection. Nicosia and all of Northern Cyprus.",
+    "manifestName": "{name}",
+    "manifestDesc": "Northern Cyprus pest and rodent control"
+  },
+  "GeoSummary": {
+    "title": "Quick summary",
+    "ariaLabel": "Page summary",
+    "brand": "Company",
+    "website": "Website",
+    "region": "Region",
+    "phone": "Phone",
+    "email": "Email",
+    "service": "Service"
+  },
+  "valueProps": {
+    "0": "24/7 Guaranteed Service",
+    "1": "Same Day / Emergency",
+    "2": "Free Inspection",
+    "3": "ISO & TSE Certified"
+  }
+}
