@@ -17,6 +17,7 @@ export function safeJsonLdStringify(data: object | object[]): string {
 const GA4_ID = /^G-[A-Z0-9]{6,12}$/;
 const GTM_ID = /^GTM-[A-Z0-9]{4,12}$/;
 const GOOGLE_ADS_ID = /^AW-\d{8,12}$/;
+const GOOGLE_ADS_CONVERSION = /^AW-\d{8,12}\/[A-Za-z0-9_-]{6,40}$/;
 const GSC_VERIFY = /^[a-zA-Z0-9_-]{10,128}$/;
 
 export function sanitizeGa4Id(value: string | undefined): string {
@@ -32,6 +33,12 @@ export function sanitizeGtmId(value: string | undefined): string {
 export function sanitizeGoogleAdsId(value: string | undefined): string {
   const id = value?.trim() ?? "";
   return GOOGLE_ADS_ID.test(id) ? id : "";
+}
+
+/** Google Ads dönüşüm etiketi — "AW-XXXXXXXX/label" biçimi (send_to) */
+export function sanitizeGoogleAdsConversion(value: string | undefined): string {
+  const id = value?.trim() ?? "";
+  return GOOGLE_ADS_CONVERSION.test(id) ? id : "";
 }
 
 export function sanitizeGscVerification(value: string | undefined): string {

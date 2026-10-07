@@ -3,6 +3,7 @@ import { CANONICAL_SITE_URL } from "./site-domain";
 import { CONTACT_EMAIL } from "./contact";
 import {
   sanitizeGa4Id,
+  sanitizeGoogleAdsConversion,
   sanitizeGoogleAdsId,
   sanitizeGscVerification,
   sanitizeGtmId,
@@ -45,6 +46,17 @@ export const site = {
   ga4: sanitizeGa4Id(process.env.NEXT_PUBLIC_GA4_ID),
   gtm: sanitizeGtmId(process.env.NEXT_PUBLIC_GTM_ID),
   googleAds: sanitizeGoogleAdsId(process.env.NEXT_PUBLIC_GOOGLE_ADS_ID),
+  /**
+   * Google Ads dönüşüm etiketleri (send_to: "AW-…/label").
+   * `contact` genel "Contact" dönüşümüdür ve varsayılan/geri-dönüş (fallback) olarak kullanılır.
+   * `phone`/`whatsapp`/`form` boş bırakılırsa ilgili olay `contact` etiketine düşer.
+   */
+  googleAdsConversion: {
+    contact: sanitizeGoogleAdsConversion(process.env.NEXT_PUBLIC_GOOGLE_ADS_CONVERSION_CONTACT),
+    phone: sanitizeGoogleAdsConversion(process.env.NEXT_PUBLIC_GOOGLE_ADS_CONVERSION_PHONE),
+    whatsapp: sanitizeGoogleAdsConversion(process.env.NEXT_PUBLIC_GOOGLE_ADS_CONVERSION_WHATSAPP),
+    form: sanitizeGoogleAdsConversion(process.env.NEXT_PUBLIC_GOOGLE_ADS_CONVERSION_FORM),
+  },
   googlePlaceId: process.env.NEXT_PUBLIC_GOOGLE_PLACE_ID ?? "",
   /** Search Console HTML etiket doğrulama kodu (meta content değeri) */
   gscVerification: sanitizeGscVerification(process.env.NEXT_PUBLIC_GSC_VERIFICATION),

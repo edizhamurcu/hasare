@@ -52,7 +52,7 @@ export async function TrustSignals() {
               <MailIcon className="h-5 w-5 shrink-0 text-brand-600" />
               <span>
                 {emailUser}
-                <span aria-hidden="true"> · </span>
+                <span>@</span>
                 {emailDomain}
               </span>
             </ClientMailLink>
