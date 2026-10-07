@@ -2,7 +2,7 @@ import type { Locale } from "@/i18n/config";
 import { showcasePests } from "./images";
 import { getService, type Service } from "./services";
 
-/** Ana sayfa pest grid — 6 öne çıkan tür */
+/** Ana sayfa pest grid — öne çıkan türler (images.ts showcasePests) */
 export const HOME_SHOWCASE_SLUGS = showcasePests;
 
 /**

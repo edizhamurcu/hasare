@@ -18,16 +18,20 @@ export async function PestShowcase() {
           </h2>
           <p className="mt-3 text-gray-600">{t("intro")}</p>
         </div>
-        <ul className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:gap-6">
+        {/* flex-wrap + justify-center: kart sayısı sütun sayısına tam bölünmezse son satır ortalanır */}
+        <ul className="mt-10 flex flex-wrap justify-center gap-4 lg:gap-6">
           {showcasePests.map((slug) => {
             const service = getService(slug, locale);
             if (!service) return null;
             const image = getServiceImage(slug, locale);
             return (
-              <li key={slug}>
+              <li
+                key={slug}
+                className="w-[calc((100%-1rem)/2)] sm:w-[calc((100%-2rem)/3)] lg:w-[calc((100%-3rem)/3)]"
+              >
                 <Link locale={locale}
                   href={`/hizmetler/${slug}`}
-                  className="group block overflow-hidden rounded-2xl border border-gray-100 bg-gray-50 shadow-sm transition hover:border-brand-200 hover:shadow-md"
+                  className="group flex h-full flex-col overflow-hidden rounded-2xl border border-gray-100 bg-gray-50 shadow-sm transition hover:border-brand-200 hover:shadow-md"
                 >
                   <div className="relative aspect-[4/3] overflow-hidden">
                     <OptimizedImage
@@ -38,7 +42,7 @@ export async function PestShowcase() {
                       className="group-hover:scale-105 transition duration-300"
                     />
                   </div>
-                  <p className="px-3 py-3 text-center text-sm font-bold text-brand-800 sm:text-base">
+                  <p className="flex flex-1 items-center justify-center px-3 py-3 text-center text-sm font-bold text-brand-800 sm:text-base">
                     {service.shortTitle}
                   </p>
                 </Link>

@@ -92,6 +92,7 @@ export function getServiceImageWithFallback(slug: string): ImageMeta {
 /** Ana sayfada öne çıkan haşere türleri */
 export const showcasePests = [
   "hamambocegi-ilaclama",
+  "alman-hamambocegi-ilaclama",
   "fare-ilaclama",
   "karinca-ilaclama",
   "sivrisinek-ilaclama",
