@@ -57,7 +57,7 @@ export async function Header() {
           ))}
         </nav>
         <div className="flex shrink-0 items-center gap-2">
-          <LanguageSwitcher className="hidden sm:flex sm:justify-center" />
+          <LanguageSwitcher />
           <a href={telHref()} className={`hidden sm:inline-flex ${ctaClass}`}>
             {t("call")}
           </a>

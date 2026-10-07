@@ -1,33 +1,21 @@
 import { headers } from "next/headers";
-import { getLocale } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 import { localeLabels, locales, type Locale } from "@/i18n/config";
 import { localeSwitchHref } from "@/lib/internal-path";
+import { LanguageMenu } from "@/components/LanguageMenu";
 
+/** Header dil seçici — dünya simgesi + açılır menü (varsayılan dil: tr) */
 export async function LanguageSwitcher({ className = "" }: { className?: string }) {
   const locale = (await getLocale()) as Locale;
   const internalPath = (await headers()).get("x-internal-path") ?? "/";
+  const t = await getTranslations("Nav");
 
-  return (
-    <div
-      className={`flex items-center justify-center gap-1 ${className}`}
-      role="navigation"
-      aria-label="Language"
-    >
-      {locales.map((loc) => (
-        <a
-          key={loc}
-          href={localeSwitchHref(loc, internalPath)}
-          aria-label={localeLabels[loc]}
-          aria-current={loc === locale ? "page" : undefined}
-          className={`inline-flex min-h-[44px] min-w-[44px] items-center justify-center rounded-md px-2.5 py-1.5 text-center text-sm font-semibold uppercase leading-none transition-colors ${
-            loc === locale
-              ? "bg-white/20 text-white"
-              : "text-brand-100 hover:bg-white/10 hover:text-white"
-          }`}
-        >
-          {loc}
-        </a>
-      ))}
-    </div>
-  );
+  const options = locales.map((loc) => ({
+    code: loc,
+    label: localeLabels[loc],
+    href: localeSwitchHref(loc, internalPath),
+    current: loc === locale,
+  }));
+
+  return <LanguageMenu options={options} menuLabel={t("language")} className={className} />;
 }
