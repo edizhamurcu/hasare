@@ -1,5 +1,22 @@
 import { company } from "../../company";
 
+/** Hizmet detay sayfasındaki saha videosu */
+export type ServiceVideo = {
+  /** H.264 MP4 — birincil kaynak (Safari/iOS dahil tüm modern tarayıcılar) */
+  src: string;
+  /** Opsiyonel VP9 WebM yedeği — H.264 desteği olmayan tarayıcılar için */
+  webmSrc?: string;
+  poster: string;
+  width: number;
+  height: number;
+  /** ISO 8601 süre, ör. "PT1M10S" */
+  durationIso: string;
+  /** ISO 8601 tarih (VideoObject.uploadDate) */
+  uploadDate: string;
+  title: string;
+  description: string;
+};
+
 const brandPhones = company.phones.map((p) => p.display).join(" , ");
 
 export type Service = {
@@ -11,6 +28,10 @@ export type Service = {
   heroSubtitle: string;
   processSteps: string[];
   faqs: { q: string; a: string }[];
+  /** Opsiyonel uzman bilgilendirme paragrafları (hizmet detay sayfasında) */
+  intro?: string[];
+  /** Opsiyonel saha videosu (public/videos altında, self-hosted) */
+  video?: ServiceVideo;
 };
 
 export const services: Service[] = [
@@ -37,6 +58,69 @@ export const services: Service[] = [
         a: "Uygulama sonrası 2–4 saat havalandırma önerilir; çocuk ve evcil hayvan için talimat verilir.",
       },
     ],
+  },
+  {
+    slug: "alman-hamambocegi-ilaclama",
+    title: "Alman Hamamböceği İlaçlama KKTC",
+    shortTitle: "Alman Hamamböceği",
+    metaDescription:
+      "Mutfak ve banyoda çoğalan Alman hamamböceğine (kalorifer böceği) uzman müdahale: monitör tuzağıyla teşhis, jel yem ve gelişim engelleyici. Lefkoşa, Girne ve tüm KKTC.",
+    keywords: [
+      "alman hamamböceği ilaçlama",
+      "alman hamambocegi kktc",
+      "kalorifer böceği ilaçlama",
+      "mutfak hamamböceği",
+      "blattella germanica",
+    ],
+    heroSubtitle: "Monitör tuzağıyla teşhis, jel yem ve gelişim engelleyici ile kalıcı kontrol",
+    intro: [
+      "Alman hamamböceği (Blattella germanica), halk arasında kalorifer böceği olarak da bilinen, 1–1,5 cm boyunda, açık kahverengi ve sırtında iki koyu paralel çizgi bulunan küçük bir türdür. Neredeyse tamamen bina içinde yaşar; mutfak dolapları, buzdolabı ve fırın arkası, bulaşık makinesi çevresi, priz ve elektrik kutuları gibi sıcak ve nemli boşlukları tercih eder.",
+      "KKTC'de konutlarda, restoran ve otel mutfaklarında en sık karşılaştığımız hamamböceği türü budur ve en zor kontrol edilenidir. Dişi, yumurta kesesini (30–40 yumurta) yumurtalar çatlayana kadar üzerinde taşır; sıcak ortamda yumurtadan erişkine geçiş birkaç hafta sürer. Bu nedenle birkaç bireyle başlayan sorun kısa sürede yüzlerceye ulaşabilir. Gündüz görülmesi genellikle yoğun bir istilanın işaretidir.",
+      "Market spreyleri ve rastgele sıvı ilaçlama çoğu zaman sorunu çözmez: kovucu etkisi böcekleri duvar ve cihaz içlerine dağıtır, popülasyonda direnç gelişir. Bu yüzden Alman hamamböceğinde yöntemimiz önce teşhis, sonra hedefli uygulama ve ölçülebilir takiptir.",
+      "Sayfadaki saha videosu, bir müşterimizin mutfağında yerleştirdiğimiz monitör tuzaklarını ve yuvalanma noktalarını gösteriyor. Tuzaktaki erişkin ve yavru (nimf) sayısı bize istilanın yoğunluğunu ve kaynağını gösterir; takip ziyaretlerinde aynı noktalarla karşılaştırarak sonucu sayıyla raporlarız.",
+    ],
+    processSteps: [
+      "Ücretsiz keşif: mutfak, banyo, cihaz arkaları ve elektrik boşluklarında yuvalanma noktalarının tespiti",
+      "Monitör (yapışkan) tuzaklarla teşhis: erişkin/nimf oranı ile istila yoğunluğunun ve kaynağın belirlenmesi",
+      "Çatlak ve yarıklara hedefli jel yem uygulaması; direnç oluşmaması için etken madde rotasyonu",
+      "Yumurta ve yavru döngüsünü kırmak için gelişim engelleyici (IGR) destekli uygulama",
+      "Hijyen ve yalıtım önerileri: yiyecek kaynağı, su kaçakları, boşlukların kapatılması",
+      "10–14 gün sonra takip ziyareti: tuzak sayımı, gerekirse ikinci uygulama ve yazılı rapor",
+    ],
+    faqs: [
+      {
+        q: "Alman hamamböceğini diğer hamamböceklerinden nasıl ayırt ederim?",
+        a: "1–1,5 cm boyunda, açık kahverengidir ve baş arkasındaki kalkanda iki koyu paralel çizgi bulunur. Genellikle mutfak ve banyoda, cihazların arkasında görülür. Lağımdan gelen büyük, koyu renkli türlerden (Amerikan / Doğu hamamböceği) farklıdır ve farklı yöntem gerektirir.",
+      },
+      {
+        q: "Bir uygulama yeterli olur mu?",
+        a: "Hafif istilalarda tek uygulama ve takip ziyareti çoğu zaman yeterlidir. Yoğun istilada yumurta keseleri ilk uygulamadan etkilenmediği için 10–14 gün sonra ikinci uygulama planlarız. Süreci tuzak sayımlarıyla raporlarız.",
+      },
+      {
+        q: "Uygulama sırasında mutfağı boşaltmamız gerekir mi?",
+        a: "Jel yem uygulamasında evi boşaltmanız gerekmez; açıkta gıda ve tabakların kaldırılması yeterlidir. Ek uygulama gereken durumlarda havalandırma ve çocuk/evcil hayvan talimatlarını önceden veririz.",
+      },
+      {
+        q: "Restoran ve otel mutfaklarında hizmet veriyor musunuz?",
+        a: "Evet. Ticari mutfaklarda servis saatlerini aksatmayacak şekilde planlama yapar, periyodik kontrol programı ve denetimlerde kullanılabilecek uygulama kayıtları sunarız.",
+      },
+      {
+        q: "Tekrar gelmemesi için ne yapmalıyım?",
+        a: "Gece açıkta yiyecek ve kirli bulaşık bırakmamak, su kaçaklarını gidermek, çöpü kapalı tutmak ve dışarıdan gelen karton/kolileri kontrol etmek en önemli adımlardır. Takip ziyaretinde evinize özel önerileri yazılı olarak iletiriz.",
+      },
+    ],
+    video: {
+      src: "/videos/alman-hamambocegi-saha.mp4",
+      webmSrc: "/videos/alman-hamambocegi-saha.webm",
+      poster: "/videos/alman-hamambocegi-saha-poster.jpg",
+      width: 540,
+      height: 960,
+      durationIso: "PT1M10S",
+      uploadDate: "2026-10-07",
+      title: "Alman hamamböceği — mutfakta monitör tuzağı ile tespit (saha çalışması)",
+      description:
+        "KKTC'de bir mutfakta yerleştirilen yapışkan monitör tuzaklarında yakalanan Alman hamamböceği erişkin ve nimfleri ile tezgâh ve süpürgelik çevresindeki yuvalanma noktaları.",
+    },
   },
   {
     slug: "fare-ilaclama",

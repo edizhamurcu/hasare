@@ -148,7 +148,10 @@
     "processTitle": "Процесс обработки",
     "relatedRegions": "Связанные регионы",
     "relatedServices": "Другие услуги",
-    "regionLabel": "Дезинсекция {name}"
+    "regionLabel": "Дезинсекция {name}",
+    "aboutTitle": "Об услуге",
+    "videoTitle": "Видео с объекта",
+    "videoFallback": "Ваш браузер не поддерживает воспроизведение видео. Нажмите, чтобы скачать видео."
   },
   "RegionDetail": {
     "neighborhoodsTitle": "Обслуживаемые районы",

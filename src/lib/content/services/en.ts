@@ -1,4 +1,5 @@
 import { company } from "../../company";
+import type { ServiceVideo } from "./tr";
 
 const brandName = "Cyprus Pest Control";
 const brandPhones = company.phones.map((p) => p.display).join(" , ");
@@ -12,6 +13,10 @@ export type Service = {
   heroSubtitle: string;
   processSteps: string[];
   faqs: { q: string; a: string }[];
+  /** Opsiyonel uzman bilgilendirme paragrafları (hizmet detay sayfasında) */
+  intro?: string[];
+  /** Opsiyonel saha videosu (public/videos altında, self-hosted) */
+  video?: ServiceVideo;
 };
 
 export const services: Service[] = [
@@ -38,6 +43,68 @@ export const services: Service[] = [
         a: "We recommend 2–4 hours of ventilation after application; instructions are provided for children and pets.",
       },
     ],
+  },
+  {
+    slug: "alman-hamambocegi-ilaclama",
+    title: "German Cockroach Control Northern Cyprus",
+    shortTitle: "German Cockroach",
+    metaDescription:
+      "Specialist German cockroach control for kitchens and bathrooms: monitoring-trap diagnosis, gel baiting and insect growth regulators. Nicosia, Kyrenia and all of Northern Cyprus.",
+    keywords: [
+      "german cockroach control",
+      "german cockroach northern cyprus",
+      "kitchen cockroach treatment",
+      "blattella germanica",
+    ],
+    heroSubtitle: "Monitoring-trap diagnosis, gel baiting and growth regulators for lasting control",
+    intro: [
+      "The German cockroach (Blattella germanica) is a small species, 1–1.5 cm long, light brown, with two dark parallel stripes behind the head. It lives almost exclusively indoors and prefers warm, humid voids: kitchen cabinets, behind fridges and ovens, around dishwashers, and inside sockets and electrical boxes.",
+      "In Northern Cyprus it is the cockroach we encounter most often in homes, restaurant and hotel kitchens — and the hardest to control. The female carries her egg case (30–40 eggs) until the eggs hatch, and in warm conditions the egg-to-adult cycle takes only a few weeks. A problem that starts with a few insects can reach hundreds quickly; seeing them in daylight usually signals a heavy infestation.",
+      "Supermarket sprays and blanket liquid treatments rarely solve it: their repellent effect drives cockroaches deeper into walls and appliances, and populations build resistance. That is why our German cockroach method is diagnosis first, then targeted treatment and measurable follow-up.",
+      "The field video on this page shows monitoring traps and harbourage points from one of our customers' kitchens. The number of adults and nymphs on each trap shows us the intensity and source of the infestation; on follow-up visits we compare the same points and report the result in numbers.",
+    ],
+    processSteps: [
+      "Free inspection: locating harbourages in the kitchen, bathroom, behind appliances and in electrical voids",
+      "Diagnosis with monitoring (sticky) traps: adult/nymph ratio to identify intensity and source",
+      "Targeted gel bait in cracks and crevices, with active-ingredient rotation to prevent resistance",
+      "Insect growth regulator (IGR) support to break the egg and nymph cycle",
+      "Hygiene and proofing advice: food sources, water leaks, sealing gaps",
+      "Follow-up visit after 10–14 days: trap count, second treatment if needed and a written report",
+    ],
+    faqs: [
+      {
+        q: "How do I tell a German cockroach from other cockroaches?",
+        a: "It is 1–1.5 cm long, light brown, with two dark parallel stripes on the shield behind the head. It is usually found in kitchens and bathrooms, behind appliances. It differs from the large, dark species that come from drains (American / Oriental cockroach) and needs a different approach.",
+      },
+      {
+        q: "Is one treatment enough?",
+        a: "For light infestations a single treatment plus a follow-up visit is usually enough. In heavy infestations egg cases are not affected by the first treatment, so we plan a second treatment after 10–14 days. We document progress with trap counts.",
+      },
+      {
+        q: "Do we need to empty the kitchen during treatment?",
+        a: "Gel baiting does not require you to leave home; simply clear exposed food and dishes. If an additional treatment is needed, we give ventilation and child/pet instructions in advance.",
+      },
+      {
+        q: "Do you treat restaurant and hotel kitchens?",
+        a: "Yes. In commercial kitchens we schedule around service hours and provide a periodic monitoring programme with treatment records suitable for inspections.",
+      },
+      {
+        q: "How do I stop them coming back?",
+        a: "Do not leave food or dirty dishes out overnight, fix water leaks, keep bins closed and check cardboard boxes brought in from outside. On the follow-up visit we give you written recommendations specific to your home.",
+      },
+    ],
+    video: {
+      src: "/videos/alman-hamambocegi-saha.mp4",
+      webmSrc: "/videos/alman-hamambocegi-saha.webm",
+      poster: "/videos/alman-hamambocegi-saha-poster.jpg",
+      width: 540,
+      height: 960,
+      durationIso: "PT1M10S",
+      uploadDate: "2026-10-07",
+      title: "German cockroach — kitchen monitoring-trap inspection (field work)",
+      description:
+        "German cockroach adults and nymphs caught on sticky monitoring traps in a kitchen in Northern Cyprus, and harbourage points around the counter and skirting.",
+    },
   },
   {
     slug: "fare-ilaclama",

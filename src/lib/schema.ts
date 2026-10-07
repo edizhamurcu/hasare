@@ -10,6 +10,7 @@ import { site } from "./site";
 import type { BlogPost } from "./content/blog";
 import type { CityLanding } from "./cities";
 import type { Service } from "./services";
+import type { ServiceVideo } from "./content/services/tr";
 
 const schemaLanguage: Record<Locale, string> = {
   tr: "tr-CY",
@@ -305,6 +306,25 @@ export function howToJsonLd(service: Service, locale: Locale) {
       name: text.split(/[.!?]/)[0]?.slice(0, 80) || text.slice(0, 80),
       text,
     })),
+  };
+}
+
+/** Hizmet sayfası saha videosu — Google video zengin sonuçları için VideoObject */
+export function videoObjectJsonLd(video: ServiceVideo, pageUrl: string, locale: Locale) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "@id": `${pageUrl}#video`,
+    name: video.title,
+    description: video.description,
+    thumbnailUrl: [`${site.url}${video.poster}`],
+    contentUrl: `${site.url}${video.src}`,
+    uploadDate: video.uploadDate,
+    duration: video.durationIso,
+    width: video.width,
+    height: video.height,
+    inLanguage: schemaLanguage[locale],
+    publisher: { "@id": `${site.url}/#organization` },
   };
 }
 

@@ -148,7 +148,10 @@
     "processTitle": "Treatment process",
     "relatedRegions": "Related regions",
     "relatedServices": "Other services",
-    "regionLabel": "{name} pest control"
+    "regionLabel": "{name} pest control",
+    "aboutTitle": "About this service",
+    "videoTitle": "From the field",
+    "videoFallback": "Your browser does not support video playback. Click to download the video."
   },
   "RegionDetail": {
     "neighborhoodsTitle": "Neighbourhoods we serve",

@@ -10,9 +10,17 @@ import { GeoSummary } from "@/components/GeoSummary";
 import { FaqSection } from "@/components/FaqSection";
 import { JsonLd } from "@/components/JsonLd";
 import { RelatedLinks } from "@/components/RelatedLinks";
+import { ServiceVideo } from "@/components/ServiceVideo";
 import { getService, getServices } from "@/lib/services";
 import { buildMetadata, localizedPath } from "@/lib/metadata";
-import { howToJsonLd, pageJsonLdGraph, serviceJsonLd, webPageJsonLd, faqJsonLd } from "@/lib/schema";
+import {
+  howToJsonLd,
+  pageJsonLdGraph,
+  serviceJsonLd,
+  webPageJsonLd,
+  faqJsonLd,
+  videoObjectJsonLd,
+} from "@/lib/schema";
 import { getServiceScopeNote } from "@/lib/content/proposal-terms";
 import { relatedCitiesForServiceLinks, relatedServicesForService } from "@/lib/related";
 import { routing, type Locale } from "@/i18n/config";
@@ -61,7 +69,8 @@ export default async function ServicePage({ params }: Props) {
             "#service-summary",
             "h1",
           ]),
-          ...(service.faqs.length > 0 ? [faqJsonLd(service.faqs, pageUrl)] : [])
+          ...(service.faqs.length > 0 ? [faqJsonLd(service.faqs, pageUrl)] : []),
+          ...(service.video ? [videoObjectJsonLd(service.video, pageUrl, loc)] : [])
         )}
       />
       <Breadcrumbs
@@ -94,6 +103,21 @@ export default async function ServicePage({ params }: Props) {
       </div>
       <GeoSummary summary={`${service.title}. ${service.heroSubtitle}`} />
       <article className="prose-content mx-auto max-w-3xl px-4 py-10">
+        {service.intro?.length ? (
+          <section aria-labelledby="service-about-title" className="space-y-4">
+            <h2 id="service-about-title">{t("aboutTitle")}</h2>
+            {service.intro.map((paragraph) => (
+              <p key={paragraph.slice(0, 48)}>{paragraph}</p>
+            ))}
+          </section>
+        ) : null}
+        {service.video ? (
+          <ServiceVideo
+            video={service.video}
+            heading={t("videoTitle")}
+            fallbackText={t("videoFallback")}
+          />
+        ) : null}
         <h2>{t("processTitle")}</h2>
         <ol>
           {service.processSteps.map((step) => (

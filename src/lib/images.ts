@@ -37,6 +37,8 @@ export const heroImage = getHeroImage("tr");
 
 const pestAltsTr: Record<string, string> = {
   "hamambocegi-ilaclama": "Hamamböceği ilaçlama — profesyonel müdahale KKTC",
+  "alman-hamambocegi-ilaclama":
+    "Alman hamamböceği — mutfakta monitör tuzağında yakalanan erişkinler, KKTC saha çalışması",
   "fare-ilaclama": "Fare ilaçlama ve kemirgen kontrolü Lefkoşa",
   "karinca-ilaclama": "Karınca istilası — konut ve iş yerlerinde profesyonel müdahale",
   "sivrisinek-ilaclama": "Sivrisinek ilaçlama — yaz sezonu uçkun ve larva kontrolü KKTC",

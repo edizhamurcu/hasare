@@ -148,7 +148,10 @@
     "processTitle": "Uygulama süreci",
     "relatedRegions": "İlgili bölgeler",
     "relatedServices": "Diğer hizmetler",
-    "regionLabel": "{name} ilaçlama"
+    "regionLabel": "{name} ilaçlama",
+    "aboutTitle": "Hizmet hakkında",
+    "videoTitle": "Sahadan örnek",
+    "videoFallback": "Tarayıcınız video oynatmayı desteklemiyor. Videoyu indirmek için tıklayın."
   },
   "RegionDetail": {
     "neighborhoodsTitle": "Hizmet verdiğimiz mahalleler",
