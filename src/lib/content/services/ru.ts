@@ -94,9 +94,9 @@ export const services: Service[] = [
       },
     ],
     video: {
-      src: "/videos/alman-hamambocegi-saha.mp4",
-      webmSrc: "/videos/alman-hamambocegi-saha.webm",
-      poster: "/videos/alman-hamambocegi-saha-poster.jpg",
+      src: "/videos/alman-hamambocegi-saha.mp4?v=1",
+      webmSrc: "/videos/alman-hamambocegi-saha.webm?v=1",
+      poster: "/videos/alman-hamambocegi-saha-poster.jpg?v=1",
       width: 540,
       height: 960,
       durationIso: "PT1M10S",

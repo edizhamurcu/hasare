@@ -153,7 +153,7 @@ const nextConfig: NextConfig = {
         ],
       },
       {
-        /** Saha videoları — dosya adı değişmeden içerik değişmez (yeni video = yeni ad) */
+        /** Saha videoları — içerik değişirse ?v= sürümünü artırın (Cloudflare önbelleği) */
         source: "/videos/:path*",
         headers: [
           {
