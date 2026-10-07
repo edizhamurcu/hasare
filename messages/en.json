@@ -260,5 +260,44 @@
     "1": "Same Day / Emergency",
     "2": "Free Inspection",
     "3": "ISO & TSE Certified"
+  },
+  "Announcement": {
+    "label": "Announcements",
+    "pause": "Pause announcements",
+    "play": "Play announcements",
+    "items": [
+      {
+        "text": "🟢 Same-day service today · Call now",
+        "action": "call"
+      },
+      {
+        "text": "🏆 Pest control in Northern Cyprus since 2010",
+        "action": "services"
+      },
+      {
+        "text": "🔍 Free inspection · Written quote",
+        "action": "quote"
+      },
+      {
+        "text": "⚡ 24/7 emergency service · Tap to call",
+        "action": "call"
+      },
+      {
+        "text": "👨‍👩‍👧 Child- and pet-friendly treatments",
+        "action": "services"
+      },
+      {
+        "text": "🪳 Cockroaches, rats, scorpions, termites",
+        "action": "services"
+      },
+      {
+        "text": "📞 Call now, our team can be with you today",
+        "action": "call"
+      },
+      {
+        "text": "📍 Lefkoşa · Girne · Mağusa · İskele · Güzelyurt",
+        "action": "regions"
+      }
+    ]
   }
 }

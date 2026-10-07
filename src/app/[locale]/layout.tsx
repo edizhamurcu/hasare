@@ -1,6 +1,7 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { Header } from "@/components/Header";
+import { AnnouncementBar } from "@/components/AnnouncementBar";
 import { Footer } from "@/components/Footer";
 import { FloatingContactSlot } from "@/components/FloatingContactSlot";
 import { AnalyticsBody, AnalyticsHead } from "@/components/Analytics";
@@ -71,6 +72,7 @@ export default async function LocaleLayout({ children, params }: Props) {
         <JsonLd data={jsonLdGraph(websiteJsonLd(locale as Locale), localBusinessJsonLd(locale as Locale))} />
         <AnalyticsBody />
         {usesAnalytics ? <ConversionTracker /> : null}
+        <AnnouncementBar />
         <Header />
         <main id="main-content" className="pb-28 md:pb-0 safe-area-pad">
           {children}

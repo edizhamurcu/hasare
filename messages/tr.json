@@ -260,5 +260,44 @@
     "1": "Aynı Gün / Acil Müdahale",
     "2": "Ücretsiz Keşif",
     "3": "ISO & TSE Belgeli"
+  },
+  "Announcement": {
+    "label": "Duyurular",
+    "pause": "Duyuruları durdur",
+    "play": "Duyuruları oynat",
+    "items": [
+      {
+        "text": "🟢 Bugün aynı gün müdahale · Hemen arayın",
+        "action": "call"
+      },
+      {
+        "text": "🏆 2010’dan beri KKTC’de haşere kontrolü",
+        "action": "services"
+      },
+      {
+        "text": "🔍 Ücretsiz keşif · Yazılı teklif",
+        "action": "quote"
+      },
+      {
+        "text": "⚡ 7/24 acil haşere servisi · Tek tıkla arayın",
+        "action": "call"
+      },
+      {
+        "text": "👨‍👩‍👧 Çocuk ve evcil hayvan dostu uygulama",
+        "action": "services"
+      },
+      {
+        "text": "🪳 Hamamböceği, fare, akrep, termit · Tek ekip",
+        "action": "services"
+      },
+      {
+        "text": "📞 Şimdi arayın, ekibimiz bugün kapınızda",
+        "action": "call"
+      },
+      {
+        "text": "📍 Lefkoşa · Girne · Mağusa · İskele · Güzelyurt",
+        "action": "regions"
+      }
+    ]
   }
 }
